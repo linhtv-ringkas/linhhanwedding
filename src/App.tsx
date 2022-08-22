@@ -1,19 +1,24 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  useEffect(()=> {
-    setTimeout(()=> {
-      const url = "https://docs.google.com/forms/d/e/1FAIpQLSd9z8k76mYqc2clgl7K8eI-QpCLlPTLgoK-sZK8hVazCYRp0w/viewform?usp=sf_link";
-      window.location.replace(url);
-    }, 200)
-  }, [])
-
   return (
     <div className="App">
-       <p>
-          Đợi xíu nhé......
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
